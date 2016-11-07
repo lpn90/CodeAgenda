@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners;
+namespace CodeAgenda\Listeners;
 
 use App\Events\ExampleEvent;
 use Illuminate\Queue\InteractsWithQueue;
