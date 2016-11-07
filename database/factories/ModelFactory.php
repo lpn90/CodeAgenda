@@ -18,7 +18,7 @@
 //    ];
 //});
 
-$factory->defne(\CodeAgenda\Entities\Pessoa::class, function ($faker){
+$factory->define(\CodeAgenda\Entities\Pessoa::class, function ($faker){
     return [
         'nome' => $faker->name,
         'apelido' => $faker->firstname,
@@ -26,7 +26,7 @@ $factory->defne(\CodeAgenda\Entities\Pessoa::class, function ($faker){
     ];
 });
 
-$factory->defne(\CodeAgenda\Entities\Telefone::class, function ($faker){
+$factory->define(\CodeAgenda\Entities\Telefone::class, function ($faker){
     return [
         'descricao' => $faker->radomElement(['Residencial', 'Comercial', 'Celular', 'Recados']),
         'codepais' => $faker->optional(0.7, 55)->numberBetween(1, 197),
