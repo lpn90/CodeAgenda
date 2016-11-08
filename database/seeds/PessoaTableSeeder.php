@@ -16,6 +16,7 @@ class PessoaTableSeeder extends Seeder
      */
     public function run()
     {
+        fact
         factory(\CodeAgenda\Entities\Pessoa::class, 30)->create();
     }
 }

@@ -5,11 +5,12 @@
  * Time: 15:49
  */
 ?>
-<html>
-<head>
-    <title>Agenda</title>
-</head>
-<body>
-<h1>Code Agenda</h1>
-</body>
-</html>
+@extends('layout')
+
+@section('content')
+    @foreach($pessoas as $pessoa)
+        <div class="col-md-6">
+            @include('persons.contato')
+        </div>
+    @endforeach
+@endsection
