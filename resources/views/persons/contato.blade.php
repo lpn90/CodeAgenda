@@ -5,7 +5,7 @@
  * Time: 21:39
  */
 ?>
-<div class="panel panel-default">
+<div class="panel @if($pessoa->sexo == 'F') panel-danger @else panel-info @endif">
     <div class="panel-heading">
         <h3 class="panel-title">
             @if( $pessoa->sexo =='M')

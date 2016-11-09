@@ -37,7 +37,7 @@ class AgendaController extends Controller
     {
         $nome = $_POST['nome'];
 
-        $pessoas = Pessoa::where('apelido', 'like', '%'.$nome.'%' )->get();
+        $pessoas = Pessoa::where('apelido', 'like', '%'.$nome.'%' )->orWhere('nome', 'like', '%'.$nome.'%' )->get();
 
         return view('search',compact('pessoas'));
     }
