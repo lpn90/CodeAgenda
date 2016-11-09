@@ -47,11 +47,7 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-12">
-            @foreach(range('A', 'Z') as $letra)
-                <a href="{{ route('agenda.letra', ['letra' => $letra]) }}" class="btn btn-primary btn-xs">{{ $letra }}</a>
-            @endforeach
-        </div>
+        @yield('butons')
     </div>
     <div class="row">
         <div class="col-lg-12 btn-row">

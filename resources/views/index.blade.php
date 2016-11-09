@@ -7,6 +7,10 @@
 ?>
 @extends('layout')
 
+@section('butons')
+    @include('persons.botoes')
+@endsection
+
 @section('content')
     @foreach($pessoas as $pessoa)
         <div class="col-md-6">
