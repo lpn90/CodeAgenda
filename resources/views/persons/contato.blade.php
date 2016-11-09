@@ -8,8 +8,10 @@
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">
-            @if( {{ $pessoa->sexo =='M'}} )
-                <span class=""
+            @if( $pessoa->sexo =='M')
+                <i class="fa fa-male"></i> 
+            @else
+                <i class="fa fa-female"></i>
             @endif
             {{ $pessoa->apelido }}
             <span class="pull-right">
