@@ -16,7 +16,7 @@
 
     <div class="row">
         <div class="col-lg-12 btn-row">
-            <a href="/" class="btn btn-default">Home</a>
+            <a href="/" class="btn btn-default">Voltar</a>
         </div>
     </div>
 @endsection

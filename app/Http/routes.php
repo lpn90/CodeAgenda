@@ -25,3 +25,14 @@ $app->post('search', [
     'as' => 'agenda.search',
     'uses' => 'AgendaController@search'
 ]);
+
+$app->get('deletep/{code}', [
+    'as' => 'agenda.pessoa.delete',
+    'uses' => 'AgendaController@pessoaDelete'
+]);
+
+$app->get('deletet/{code}', [
+    'as' => 'agenda.telefone.delete',
+    'uses' => 'AgendaController@telefoneDelete'
+]);
+

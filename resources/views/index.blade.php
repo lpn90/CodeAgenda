@@ -8,13 +8,17 @@
 @extends('layout')
 
 @section('butons')
-    @include('persons.botoes')
+    @if(sizeof($letras)>0)
+        @include('persons.botoes')
+    @endif
 @endsection
 
 @section('content')
-    @foreach($pessoas as $pessoa)
-        <div class="col-md-6">
-            @include('persons.contato')
-        </div>
-    @endforeach
+    @if(sizeof($pessoas)>0)
+        @foreach($pessoas as $pessoa)
+            <div class="col-md-6">
+                @include('persons.contato')
+            </div>
+        @endforeach
+    @endif
 @endsection
