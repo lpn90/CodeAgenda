@@ -28,5 +28,14 @@ class AgendaController extends Controller
 
         return view('index',compact('pessoas', 'letras'));
     }
+    
+    public function search()
+    {
+        $nome = $_POST['nome'];
+
+        $pessoas = Pessoa::where('apelido', 'like', '%'.$nome.'%' )->get();
+
+        return view('search',compact('pessoas'));
+    }
 
 }

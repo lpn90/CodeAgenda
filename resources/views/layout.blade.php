@@ -33,11 +33,11 @@
                 Code.Education<br>
                 <small><i class="glyphicon glyphicon-phone-alt"></i> Agenda Telefônica</small>
                 <span class="pull-right">
-                    <form class="form-inline" action="" method="post">
+                    <form class="form-inline" action="{{ route('agenda.search') }}" method="post">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Pesquisar Contato...">
+                            <input type="text" name="nome" id="nome" class="form-control" placeholder="Pesquisar Contato...">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i> </button>
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> </button>
                                 </span>
                         </div><!-- /input-group -->
                     </form>
